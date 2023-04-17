@@ -16,7 +16,6 @@ const config = {
       lib: 'src/lib'
     }
   },
-  preprocess: vitePreprocess(),
 };
 
 export default config;
