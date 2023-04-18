@@ -1,6 +1,7 @@
 <script lang="ts">
-  import AlbumCover from "$lib/components/AlbumCover.svelte";
+  import ImageCard from "$lib/components/ImageCard.svelte";
   import GalleryCover from "$lib/components/GalleryCover.svelte";
+  import { routes } from "$lib/constants/route";
 </script>
 
 <div class="container-lg lg:w-1/2 mx-auto">
@@ -12,7 +13,9 @@
       Hello, this is mingnho's hault where he kept the photos he's not so ashamed of.
     </div>
     <div class="w-full px-16 flex-col">
-      <AlbumCover></AlbumCover>
+      {#each routes as route}
+        <ImageCard title={route.date} coverImgUrl={route.coverImg} path={route.id}></ImageCard>
+      {/each}
     </div>
   </div>
 </div>
