@@ -40,7 +40,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Check directories
-        run: ls
+        run: ls -la
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
