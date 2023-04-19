@@ -2,11 +2,12 @@
   import { isHomePage, albumId } from "$lib/store/state";
   import NavigationButton from "$lib/components/NavigationButton.svelte";
   import { goto } from "$app/navigation";
+  import { base } from "$app/paths";
 
   const navigateToHomePage = () => {
     isHomePage.set(true);
     albumId.set('');
-    goto("/");
+    goto(base)
   }
 </script>
 

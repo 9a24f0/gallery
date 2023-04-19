@@ -52,7 +52,7 @@ export const albums = {
     'post/05/balloons.jpg',
     'post/05/bánh-tráng-nướng.jpg',
     'post/05/bubbles.jpg',
-    'post/05/exhibitions.jpg',
+    'post/05/exhibition.jpg',
     'post/05/ice-cream.jpg',
     'post/05/playin.jpg',
     'post/05/red.jpg',
