@@ -20,9 +20,9 @@ const config = {
       precompress: false,
       strict: true
     }),
-    paths: {
-      base: '/gallery'
-    },
+    // paths: {
+    //   base: '/gallery'
+    // },
     files: {
       lib: 'src/lib'
     },
