@@ -15,7 +15,6 @@ const config = {
     paths: {
       base: '/gallery'
     },
-    outDir: 'dist',
     files: {
       lib: 'src/lib'
     }

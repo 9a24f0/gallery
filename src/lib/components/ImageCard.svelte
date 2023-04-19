@@ -1,6 +1,7 @@
 <script lang="ts">
   import { isHomePage } from "$lib/store/state";
   import { goto } from "$app/navigation";
+  import { base } from '$app/paths';
 
   export let title: string;
   export let path: string;
@@ -8,7 +9,7 @@
 
   const navigateToAlbumPage = (url: string) => {
     isHomePage.set(false);
-    goto(url);
+    goto(`${base}/${url}`);
   }
 </script>
 

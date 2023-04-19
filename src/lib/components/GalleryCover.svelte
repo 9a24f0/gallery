@@ -1,6 +1,7 @@
 <script lang="ts">
   import { T, Canvas } from '@threlte/core';
   import { OrbitControls, GLTF } from '@threlte/extras';
+  import { base } from '$app/paths';
 </script>
 
 <Canvas rendererParameters={{ antialias: true }}>
@@ -10,6 +11,6 @@
   </T.PerspectiveCamera>
 
   <GLTF
-    url="models/house-on-the-hill.glb">
+    url="{base}/models/house-on-the-hill.glb">
   </GLTF>
 </Canvas>

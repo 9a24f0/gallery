@@ -1,5 +1,6 @@
 <script lang="ts">
   import { isHomePage, albumId } from "$lib/store/state";
+  import { base } from '$app/paths';
   import { goto } from "$app/navigation";
   import { albums } from "$lib/constants/album";
 
@@ -10,12 +11,12 @@
 
   const navigateToPreviousAlbum = () => {
     const previousId = ids[currentIdIndex - 1];
-    goto(previousId);
+    goto(`${base}/${previousId}`);
   }
 
   const navigateToNextAlbum = () => {
     const nextId = ids[currentIdIndex + 1];
-    goto(nextId);
+    goto(`${base}/${nextId}`);
   }
 
 </script>
